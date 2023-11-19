@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+    <div class="container">
+        <h1>Loan Calculator</h1>
+        <p>Loan Amaount $ <input onchange="calculateLoan()" class="input" type="number" id="loan-amount" min="1" max="50000" value="10000"></p>
+        <p>Interes Rate % <input onchange="calculateLoan()" class="input" type="number" id="interest-rate" min="0" max="100" value="10" step=".1"></p>
+        <p>Month to pay $ <input onchange="calculateLoan()" class="input" type="number" id="month-to-pay" min="6" max="48" value="12"></p>
+        <p class="paytment" id="paytment">Monthly Payment:</p>
+        
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
